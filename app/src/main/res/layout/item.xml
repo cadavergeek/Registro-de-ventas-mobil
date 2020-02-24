@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="100"
+    >
+
+
+    <TextView
+        android:id="@+id/articulo"
+        android:gravity="center_vertical"
+        android:hint="Producto"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="50"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/cantidad"
+                android:hint="Cantidad"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="15dp"
+                android:layout_margin="1dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/precio"
+                android:hint="Precio"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="1dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/Black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalArt"
+            android:hint="Total"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:layout_margin="3dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/Black" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
